@@ -3,6 +3,7 @@ using UnityEngine;
 public class PickableObject : MonoBehaviour, IPickableObject
 {
     [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private float x, y, z;
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class PickableObject : MonoBehaviour, IPickableObject
 
         transform.position = position;
         transform.rotation = userPosition.rotation;
-        //transform.Rotate(0, 180, 0);
+        transform.Rotate(x, y, z);
     }
 
     public void ToggleFreeze()
