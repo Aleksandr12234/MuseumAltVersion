@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5225242749538606660}
   - component: {fileID: 2442069374547953731}
   - component: {fileID: 309446040936905851}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: "\u041A\u0443\u0431.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 4731197630157952624}
   - component: {fileID: 6923265074215228178}
   - component: {fileID: 2382190853421281497}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: "\u0414\u0432\u0435\u0440\u044C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

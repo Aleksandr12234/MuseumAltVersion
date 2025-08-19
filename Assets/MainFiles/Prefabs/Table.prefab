@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4526384290598325833}
   - component: {fileID: 2923445968914934845}
   - component: {fileID: 79337148454740647}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 5464096057861247179}
   - component: {fileID: 7328140632510947475}
   - component: {fileID: 6514401364322880510}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

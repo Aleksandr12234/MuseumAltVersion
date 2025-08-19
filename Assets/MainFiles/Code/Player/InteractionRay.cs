@@ -15,7 +15,7 @@ public class InteractionRay : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, transform.forward);
         GameObject interactiveObject = null;
-        int layerMask = LayerMask.GetMask("RayCastObjects");
+        int layerMask = LayerMask.GetMask("InteractiveObjects", "StaticInteractiveObjects");
 
         if (Physics.Raycast(ray, out RaycastHit hit, _rayLength, layerMask))
         {
