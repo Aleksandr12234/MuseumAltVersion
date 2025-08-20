@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 5624718661711694749}
   - component: {fileID: 9074287919645456724}
   - component: {fileID: 4481778822389699759}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: "\u041F\u043B\u043E\u0441\u043A\u043E\u0441\u0442\u044C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1

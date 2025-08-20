@@ -19,12 +19,8 @@ public class InteractionRay : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, _rayLength, layerMask))
         {
-            Debug.Log("Пересечение с " + hit.collider.gameObject.name);
+            //Debug.Log("Пересечение с " + hit.collider.gameObject.name);
             interactiveObject = hit.collider.gameObject;
-        }
-        else
-        {
-            Debug.Log("Не пересекается");
         }
 
         //ЛКМ - действие
@@ -53,6 +49,19 @@ public class InteractionRay : MonoBehaviour
                 _selectedObject.GetComponent<IPickableObject>().ToggleFreeze();
             }
         }
+        //ЛКМ - длительное действие
+        else if (Input.GetMouseButton(0))
+        { 
+            if (_selectedObject != null && _selectedObject.TryGetComponent<IUsebleObject>(out var useble))
+            {
+                useble.ActiveAction();
+            }
+            else if (_selectedObject == null && interactiveObject != null && interactiveObject.TryGetComponent<IUsebleObject>(out var use))
+            {
+                use.ActiveAction();
+            }
+        }
+
 
         if (_selectedObject != null) _selectedObject.GetComponent<IPickableObject>().MovementToHands(transform);
     }
