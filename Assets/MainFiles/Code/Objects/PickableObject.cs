@@ -25,12 +25,12 @@ public class PickableObject : MonoBehaviour, IPickableObject
         if (!_rigidbody.isKinematic)
         {
             _rigidbody.isKinematic = true;
-            _rigidbody.detectCollisions = false;
+            //_rigidbody.detectCollisions = false;
         }
         else
         {
             _rigidbody.isKinematic = false;
-            _rigidbody.detectCollisions = true;
+           // _rigidbody.detectCollisions = true;
         }
     }
 }
