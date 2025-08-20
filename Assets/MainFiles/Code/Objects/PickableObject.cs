@@ -4,6 +4,7 @@ public class PickableObject : MonoBehaviour, IPickableObject
 {
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private float x, y, z;
+    [SerializeField] private float zoom = 0.5f;
 
     void Start()
     {
@@ -12,11 +13,12 @@ public class PickableObject : MonoBehaviour, IPickableObject
 
     public void MovementToHands(Transform userPosition)
     {
-        Vector3 position = userPosition.position + userPosition.forward * 0.5f;
+        Vector3 position = userPosition.position + userPosition.forward * zoom;
 
         transform.position = position;
         transform.rotation = userPosition.rotation;
         transform.Rotate(x, y, z);
+
     }
 
     public void ToggleFreeze()

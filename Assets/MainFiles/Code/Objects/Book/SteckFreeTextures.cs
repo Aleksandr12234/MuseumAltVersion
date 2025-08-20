@@ -1,11 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class SteckFreeTextures : MonoBehaviour
 {
     [SerializeField] private List<Texture> _stackTextures;
 
+    [MethodImpl(MethodImplOptions.Synchronized)]
     public Texture GetTexture()
     {
         if (_stackTextures.Count == 0) return null;
