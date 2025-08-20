@@ -8,6 +8,7 @@ public class PCMovement : MonoBehaviour
     [SerializeField] private int _horizontalSensitivity=50;
     [SerializeField] private int _verticalSensitivity = 100;
     [SerializeField] private int _maxXRotation = 90;
+    [SerializeField] private StepSound _audioScript;
 
     private float _angle = 0;
 
@@ -30,5 +31,6 @@ public class PCMovement : MonoBehaviour
         Vector3 moveDirection = transform.TransformDirection(new Vector3(moveX, 0, moveZ)) * _speed;
         moveDirection.y = _rigidbody.linearVelocity.y;
         _rigidbody.linearVelocity = moveDirection;
+        if (moveX != 0 || moveZ != 0) _audioScript.Step();
     }
 }
