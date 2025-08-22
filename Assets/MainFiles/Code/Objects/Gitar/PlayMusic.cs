@@ -5,6 +5,8 @@ public class PlayMusic : MonoBehaviour, IUsebleObject
     [SerializeField] private AudioSource _audio;
     private bool isPlaying;
 
+    public AudioManager AudioManager;
+
     void Start()
     {
         isPlaying = false;
@@ -16,6 +18,7 @@ public class PlayMusic : MonoBehaviour, IUsebleObject
         if (!isPlaying && _audio.isPlaying)
         {
             _audio.Pause();
+            AudioManager.UnmuteAmbient();
         }
         isPlaying = false;
     }
@@ -24,6 +27,7 @@ public class PlayMusic : MonoBehaviour, IUsebleObject
     {
         isPlaying = true;
         if (!_audio.isPlaying) _audio.Play();
+        AudioManager.MuteAmbient();
     }
 
     public void Action() { }
