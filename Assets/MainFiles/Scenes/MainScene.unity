@@ -1246,8 +1246,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7259532881739401535, guid: 2884c2209d4f7f34397eeabfaf5fe571, type: 2}
-  m_audioClip: {fileID: 8300000, guid: ff4129c0e080d2846bc1f8b2cdf4b13a, type: 3}
-  m_Resource: {fileID: 8300000, guid: ff4129c0e080d2846bc1f8b2cdf4b13a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 596a867d2c54a934eae09ab12da26cd0, type: 3}
+  m_Resource: {fileID: 8300000, guid: 596a867d2c54a934eae09ab12da26cd0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2688,15 +2688,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3769024052595140644, guid: 132f013682d670d4caf56d96acf12abe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.69343
+      value: -0.357
       objectReference: {fileID: 0}
     - target: {fileID: 3769024052595140644, guid: 132f013682d670d4caf56d96acf12abe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39233002
+      value: -0.178
       objectReference: {fileID: 0}
     - target: {fileID: 3769024052595140644, guid: 132f013682d670d4caf56d96acf12abe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.57571
+      value: 0.134
       objectReference: {fileID: 0}
     - target: {fileID: 3769024052595140644, guid: 132f013682d670d4caf56d96acf12abe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2816,3 +2816,4 @@ SceneRoots:
   - {fileID: 364683309}
   - {fileID: 339673608}
   - {fileID: 1970693093}
+  - {fileID: 2123477433}
