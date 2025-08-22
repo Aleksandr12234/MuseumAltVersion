@@ -35,7 +35,7 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.9
+  m_ReflectionIntensity: 0.145
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_UseRadianceAmbientProbe: 0
@@ -889,6 +889,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2310664084006308921, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_Dithering
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310664084006308921, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_Antialiasing
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310664084006308921, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_RenderShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5983161924364817352, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
       propertyPath: m_Name
       value: Keyboard Player
@@ -1108,6 +1120,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 101433466503915357, guid: 3da46ef796677184786d07665754fb25, type: 3}
   m_PrefabInstance: {fileID: 4928566504175691030}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1970693091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970693093}
+  - component: {fileID: 1970693092}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1970693092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970693091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 99b443828dbd0c34c9fa2856c22908a1, type: 2}
+--- !u!4 &1970693093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970693091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3657397, y: 0.15082529, z: 2.646521}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2021957770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5962104604649724500, guid: 82657cafc8be6fa4c8ab6d4b8637e801, type: 3}
@@ -2589,3 +2650,4 @@ SceneRoots:
   - {fileID: 398180324}
   - {fileID: 364683309}
   - {fileID: 339673608}
+  - {fileID: 1970693093}
