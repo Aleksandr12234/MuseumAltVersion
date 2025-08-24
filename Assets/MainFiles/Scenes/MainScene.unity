@@ -889,6 +889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1767424585299047033, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_Size.z
+      value: 9.72
+      objectReference: {fileID: 0}
     - target: {fileID: 2310664084006308921, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
       propertyPath: m_Dithering
       value: 0
@@ -904,6 +908,18 @@ PrefabInstance:
     - target: {fileID: 5983161924364817352, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
       propertyPath: m_Name
       value: Keyboard Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166851991659237066, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166851991659237066, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_TagString
+      value: AffordanceCaller
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462104746134896331, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
