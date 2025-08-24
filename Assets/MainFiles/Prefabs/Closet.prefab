@@ -242,6 +242,8 @@ GameObject:
   - component: {fileID: 4731197630157952624}
   - component: {fileID: 6923265074215228178}
   - component: {fileID: 2382190853421281497}
+  - component: {fileID: 834302560704063074}
+  - component: {fileID: 6492883609442059193}
   m_Layer: 8
   m_Name: "\u0414\u0432\u0435\u0440\u044C"
   m_TagString: Untagged
@@ -374,6 +376,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DoorAnimator: {fileID: 4731197630157952624}
+--- !u!114 &834302560704063074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587644518105461473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.59621054, b: 0, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &6492883609442059193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587644518105461473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27df65f8a74564742b580bab2378af86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5978680533012019797
 GameObject:
   m_ObjectHideFlags: 0

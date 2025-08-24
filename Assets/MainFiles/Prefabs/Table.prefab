@@ -275,6 +275,8 @@ GameObject:
   - component: {fileID: 5464096057861247179}
   - component: {fileID: 7328140632510947475}
   - component: {fileID: 6514401364322880510}
+  - component: {fileID: 5520677439837185697}
+  - component: {fileID: 1327153319653935079}
   m_Layer: 8
   m_Name: Drawer
   m_TagString: Untagged
@@ -407,3 +409,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DoorAnimator: {fileID: 5464096057861247179}
+--- !u!114 &5520677439837185697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583033047536665626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.59621054, b: 0, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1327153319653935079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583033047536665626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27df65f8a74564742b580bab2378af86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
