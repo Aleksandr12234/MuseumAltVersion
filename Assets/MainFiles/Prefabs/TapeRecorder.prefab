@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 7432061670993201363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.981839, z: -0, w: -0.1897161}
-  m_LocalPosition: {x: 0.161, y: 0.387, z: -0.511}
+  m_LocalPosition: {x: -0.357, y: -0.178, z: 0.134}
   m_LocalScale: {x: 0.34593, y: 0.34593, z: 0.34593}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 4327840267963271511}
   - component: {fileID: 8267227653032177270}
   - component: {fileID: 4685544862757401184}
-  - component: {fileID: 7085138777635657572}
   m_Layer: 8
   m_Name: TapeRecorder
   m_TagString: Untagged
@@ -261,26 +260,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8275961133836949880}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 0.59621054, b: 0, a: 1}
-  outlineWidth: 10
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &7085138777635657572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8275961133836949880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27df65f8a74564742b580bab2378af86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
