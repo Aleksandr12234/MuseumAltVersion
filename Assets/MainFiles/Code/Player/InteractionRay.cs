@@ -3,6 +3,7 @@ using UnityEngine;
 public class InteractionRay : MonoBehaviour
 {
     [SerializeField] private float _rayLength = 3;
+    [SerializeField] private float _zoom = 0.5f;
     private GameObject _selectedObject;
     private GameObject _previuGameObject;
 
@@ -53,7 +54,10 @@ public class InteractionRay : MonoBehaviour
             }
         }
 
-        if (_selectedObject != null) _selectedObject.GetComponent<IPickableObject>().MovementToHands(transform);
+        if (Input.mouseScrollDelta.y>0 && _zoom<0.7) { _zoom += 0.05f; }
+        else if(Input.mouseScrollDelta.y<0 && _zoom>0.2){_zoom -= 0.05f;}
+
+        if (_selectedObject != null) _selectedObject.GetComponent<IPickableObject>().MovementToHands(transform, _zoom);
     }
 
     void OnDrawGizmos()

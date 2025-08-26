@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wood
-    second: {fileID: 2100000, guid: 92bdf936d6faced46979af00badb6b90, type: 2}
+    second: {fileID: 2100000, guid: a1ffcd0d987ecf240a3777b0eefea541, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wood.001
-    second: {fileID: 2100000, guid: 2e72ed188ca37314c95dabc3a43e813f, type: 2}
+    second: {fileID: 2100000, guid: a1ffcd0d987ecf240a3777b0eefea541, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -28,27 +28,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u0414\u0435\u0440\u0436\u0430\u0442\u0435\u043B\u044C.001"
-    second: {fileID: 2100000, guid: 5b464a0d13e2e084c81e0858508d120d, type: 2}
+    second: {fileID: 2100000, guid: 4a6d0440be75a1d419e93e9ad1b93d69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u0414\u0440\u0435\u0436\u0430\u0442\u0435\u043B\u044C"
-    second: {fileID: 2100000, guid: 9bbdd94e55ed29c4996b463918372d5b, type: 2}
+    second: {fileID: 2100000, guid: 4a6d0440be75a1d419e93e9ad1b93d69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u041A\u043E\u043B\u044C\u0446\u0430"
-    second: {fileID: 2100000, guid: 58ba04a65a6c3ac448800ad7acb5837a, type: 2}
+    second: {fileID: 2100000, guid: 4a6d0440be75a1d419e93e9ad1b93d69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u041A\u043E\u043D\u0435\u0446 \u0442\u0440\u0443\u0431\u043A\u0438"
-    second: {fileID: 2100000, guid: 0f4385d2d1770744fae3fc7693a7c7a1, type: 2}
+    second: {fileID: 2100000, guid: 4a6d0440be75a1d419e93e9ad1b93d69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u0422\u0440\u0443\u0431\u043A\u0430"
-    second: {fileID: 2100000, guid: 2d1234d98b0ada44b8bb81f2d1171085, type: 2}
+    second: {fileID: 2100000, guid: 4a6d0440be75a1d419e93e9ad1b93d69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

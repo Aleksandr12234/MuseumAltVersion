@@ -4,14 +4,14 @@ public class PickableObject : MonoBehaviour, IPickableObject
 {
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private float x, y, z;
-    [SerializeField] private float zoom = 0.5f;
+    //[SerializeField] private float zoom = 0.5f;
 
     void Start()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody>();
     }
 
-    public void MovementToHands(Transform userPosition)
+    public void MovementToHands(Transform userPosition, float zoom)
     {
         Vector3 position = userPosition.position + userPosition.forward * zoom;
 
