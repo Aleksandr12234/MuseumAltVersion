@@ -585,9 +585,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2596179345369263228, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143777029266639551, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_TagString
+      value: EditorOnly
+      objectReference: {fileID: 0}
     - target: {fileID: 5983161924364817352, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
       propertyPath: m_Name
       value: Keyboard Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983161924364817352, guid: 771f5eacfbf4e7d4f94a56dbf7a11353, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -913,7 +925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2123477432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,15 +1592,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 675627061987908316, guid: 10b7f5c4e1fb7574894efb580ff4a2a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02857995
+      value: 0.053
       objectReference: {fileID: 0}
     - target: {fileID: 675627061987908316, guid: 10b7f5c4e1fb7574894efb580ff4a2a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.33526003
+      value: -0.317
       objectReference: {fileID: 0}
     - target: {fileID: 675627061987908316, guid: 10b7f5c4e1fb7574894efb580ff4a2a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5182301
+      value: -1.549
       objectReference: {fileID: 0}
     - target: {fileID: 675627061987908316, guid: 10b7f5c4e1fb7574894efb580ff4a2a8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1641,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8517276845843427973, guid: f57ecad8ce5706e4d8f2018b7182a9ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: 0.427
       objectReference: {fileID: 0}
     - target: {fileID: 8517276845843427973, guid: f57ecad8ce5706e4d8f2018b7182a9ed, type: 3}
       propertyPath: m_LocalPosition.y
