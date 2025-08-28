@@ -1,14 +1,11 @@
 using UnityEngine;
 
-public class PCMovement : MonoBehaviour
+public class Rotation : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Transform _camera;
-    [SerializeField] private float _speed = 10f;
     [SerializeField] private int _horizontalSensitivity=50;
     [SerializeField] private int _verticalSensitivity = 100;
     [SerializeField] private int _maxXRotation = 90;
-    [SerializeField] private StepSound _audioScript;
 
     private float _angle = 0;
 
@@ -21,16 +18,5 @@ public class PCMovement : MonoBehaviour
         _angle = Mathf.Clamp(_angle, -_maxXRotation, _maxXRotation);
         transform.Rotate(0, mouseX, 0);
         _camera.localEulerAngles = new Vector3(_angle, 0, 0);
-    }
-
-    private void FixedUpdate()
-    {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
-
-        Vector3 moveDirection = transform.TransformDirection(new Vector3(moveX, 0, moveZ)) * _speed;
-        moveDirection.y = _rigidbody.linearVelocity.y;
-        _rigidbody.linearVelocity = moveDirection;
-        if (moveX != 0 || moveZ != 0) _audioScript.Step();
     }
 }

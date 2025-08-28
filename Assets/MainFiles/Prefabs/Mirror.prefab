@@ -69,7 +69,7 @@ Camera:
   field of view: 44.9
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -445,7 +445,7 @@ Transform:
   m_GameObject: {fileID: 7248611280111548159}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.6501, y: 1.523, z: 0.466}
+  m_LocalPosition: {x: 0.42443, y: 1.2295101, z: -0.23648998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

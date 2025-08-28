@@ -273,9 +273,9 @@ GameObject:
   - component: {fileID: 1842851808512625858}
   - component: {fileID: 5297766969010746430}
   - component: {fileID: 5464096057861247179}
-  - component: {fileID: 7328140632510947475}
   - component: {fileID: 6514401364322880510}
   - component: {fileID: 5520677439837185697}
+  - component: {fileID: 7628710019508745201}
   m_Layer: 8
   m_Name: Drawer
   m_TagString: Untagged
@@ -374,27 +374,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &7328140632510947475
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8583033047536665626}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.02115562, y: 0.021830168, z: 0.02017417}
-  m_Center: {x: 0.0004698382, y: -0.000000002328306, z: 0.0000870805}
 --- !u!114 &6514401364322880510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,3 +405,24 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!65 &7628710019508745201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583033047536665626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02115562, y: 0.021830168, z: 0.02017417}
+  m_Center: {x: 0.0004698382, y: -0.000000009778887, z: 0.0000870805}

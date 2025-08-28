@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 454726912868989361}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5049231, y: -0.5132515, z: -0.4957091, w: -0.48569345}
-  m_LocalPosition: {x: -0.2869, y: -0.1483, z: -0.1897}
+  m_LocalPosition: {x: -0.288, y: -0.148, z: -0.216}
   m_LocalScale: {x: 0.33000004, y: 11, z: 11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -155,7 +155,6 @@ MonoBehaviour:
   x: -90
   y: 90
   z: 0
-  zoom: 0.5
 --- !u!114 &8967921982138882686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +340,6 @@ MonoBehaviour:
   x: -90
   y: 90
   z: 0
-  zoom: 0.5
 --- !u!114 &4353974678490878772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,13 +458,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5746155810345389393}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5049231, y: -0.5132515, z: -0.4957091, w: -0.48569345}
-  m_LocalPosition: {x: -0.29002997, y: 0.020349622, z: -0.19108349}
+  m_LocalRotation: {x: -0.58366764, y: -0.5936535, z: -0.3958916, w: -0.38752753}
+  m_LocalPosition: {x: -0.29003, y: 0.020349622, z: -0.19108349}
   m_LocalScale: {x: 0.33000004, y: 11, z: 11}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7570482101052305318}
-  m_LocalEulerAnglesHint: {x: -181.794, y: -88.474, z: -166.07}
+  m_LocalEulerAnglesHint: {x: -178.988, y: -67.27899, z: -90.298004}
 --- !u!33 &8312089627277154382
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -584,7 +582,6 @@ MonoBehaviour:
   x: -90
   y: 90
   z: 0
-  zoom: 0.5
 --- !u!114 &3609146317494818863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,13 +643,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7833740656021378326}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5049231, y: -0.5132515, z: -0.4957091, w: -0.48569345}
-  m_LocalPosition: {x: -0.3051, y: 0.0209, z: -0.601}
+  m_LocalRotation: {x: -0.4656604, y: -0.47318542, z: -0.5340881, w: -0.5234557}
+  m_LocalPosition: {x: -0.2981, y: 0.021, z: -0.5809}
   m_LocalScale: {x: 0.33000004, y: 11, z: 11}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7570482101052305318}
-  m_LocalEulerAnglesHint: {x: -181.794, y: -88.474, z: -166.07}
+  m_LocalEulerAnglesHint: {x: -178.972, y: -96.80701, z: -89.76001}
 --- !u!33 &5787972862183718921
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -770,7 +767,6 @@ MonoBehaviour:
   x: -90
   y: 90
   z: 0
-  zoom: 0.5
 --- !u!114 &5229831166100813761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,13 +828,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8891495553387771996}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5049231, y: -0.5132515, z: -0.4957091, w: -0.48569345}
-  m_LocalPosition: {x: -0.302, y: -0.1477, z: -0.6013}
+  m_LocalRotation: {x: -0.5662854, y: -0.57589847, z: -0.42130217, w: -0.4125122}
+  m_LocalPosition: {x: -0.30200005, y: -0.14769995, z: -0.6013}
   m_LocalScale: {x: 0.33000004, y: 11, z: 11}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7570482101052305318}
-  m_LocalEulerAnglesHint: {x: -181.794, y: -88.474, z: -166.07}
+  m_LocalEulerAnglesHint: {x: -178.965, y: -72.257996, z: -90.208984}
 --- !u!33 &5152394094493560131
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -956,7 +952,6 @@ MonoBehaviour:
   x: -90
   y: 90
   z: 0
-  zoom: 0.5
 --- !u!114 &4025520727890190985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,13 +1013,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8980549581850371119}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5049231, y: -0.5132515, z: -0.4957091, w: -0.48569345}
-  m_LocalPosition: {x: -0.283, y: -0.356, z: -0.19}
+  m_LocalRotation: {x: -0.3758522, y: -0.381578, z: -0.6029534, w: -0.59125334}
+  m_LocalPosition: {x: -0.268, y: -0.356, z: -0.22}
   m_LocalScale: {x: 0.33000004, y: 11, z: 11}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7570482101052305318}
-  m_LocalEulerAnglesHint: {x: -181.794, y: -88.474, z: -166.07}
+  m_LocalEulerAnglesHint: {x: -179.1, y: -115.23401, z: -89.448}
 --- !u!33 &4631206173906186544
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1142,7 +1137,6 @@ MonoBehaviour:
   x: -90
   y: 90
   z: 0
-  zoom: 0.5
 --- !u!114 &3534697243087409914
 MonoBehaviour:
   m_ObjectHideFlags: 0

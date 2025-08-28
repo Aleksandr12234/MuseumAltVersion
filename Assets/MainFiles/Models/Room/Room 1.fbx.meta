@@ -83,12 +83,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u0421\u0442\u0435\u043A\u043B\u043E.001"
-    second: {fileID: 2100000, guid: 4bae923f40f8b24459870c563fe32d6b, type: 2}
+    second: {fileID: 2100000, guid: fa0518f1d8536cb49bae55b3cdf8a5ae, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u0441\u0442\u0435\u043A\u043B\u043E"
-    second: {fileID: 2100000, guid: f257a636add35b64093106466ddc9f72, type: 2}
+    second: {fileID: 2100000, guid: fa0518f1d8536cb49bae55b3cdf8a5ae, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

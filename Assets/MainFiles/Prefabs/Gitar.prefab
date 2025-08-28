@@ -275,7 +275,6 @@ MonoBehaviour:
   x: 0
   y: 180
   z: 0
-  zoom: 0.5
 --- !u!114 &2678568104128102584
 MonoBehaviour:
   m_ObjectHideFlags: 0
