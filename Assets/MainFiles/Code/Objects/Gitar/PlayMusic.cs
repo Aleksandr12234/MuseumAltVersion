@@ -17,6 +17,7 @@ public class PlayMusic : MonoBehaviour, IUsebleObject
     {
         if (!isPlaying && _audio.isPlaying)
         {
+            //AudioSourceExtensions.FadeOut(_audio, this, 0.2f); - bugs, dont' play on second enter. No much time for solving
             _audio.Pause();
             AudioManager.UnmuteAmbient();
         }

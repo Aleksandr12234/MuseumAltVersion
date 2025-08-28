@@ -20,6 +20,7 @@ public class TapeRecoreder : MonoBehaviour, IUsebleObject
     {
         if (_source.isPlaying)
         {
+            AudioSourceExtensions.FadeOut(_source, this, 0.1f);
             _source.Pause();
             AudioManager.UnmuteAmbient();
             //here may be placed animation control (rotation of rollers)
@@ -27,6 +28,7 @@ public class TapeRecoreder : MonoBehaviour, IUsebleObject
         }
         else
         {
+            AudioSourceExtensions.FadeIn(_source, this, 0.1f);
             _source.Play();
             AudioManager.MuteAmbient();
         }
