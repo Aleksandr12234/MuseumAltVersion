@@ -4665,6 +4665,7 @@ GameObject:
   - component: {fileID: 4201329875840615538}
   - component: {fileID: 4179666553854941258}
   - component: {fileID: 2625062435850236026}
+  - component: {fileID: 6152533582674460081}
   - component: {fileID: 1304708525746650595}
   m_Layer: 7
   m_Name: ThinBook
@@ -4818,6 +4819,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000001, y: 0.020000005, z: 0.001325362}
   m_Center: {x: -0.00013087412, y: -9.313226e-10, z: 0}
+--- !u!114 &6152533582674460081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4956332693135533990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27df65f8a74564742b580bab2378af86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1304708525746650595
 MonoBehaviour:
   m_ObjectHideFlags: 0
