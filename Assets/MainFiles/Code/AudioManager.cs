@@ -1,53 +1,75 @@
-using System.Threading;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-
-    [SerializeField]private AudioListener PlayerAudioListener;
-
+    [SerializeField] private AudioListener PlayerAudioListener;
     [SerializeField] private AudioMixer _audioMixer;
 
-    public int VolumeMaster { get; private set; }
-    public int VolumeAmbient { get; private set; }
+    [Header("Fade Settings")]
+    [SerializeField] private float fadeDuration = 1.0f;
 
-    public int VolumeObjects { get; private set; }
+    public int VolumeMaster { get; private set; } = 10;
+    public int VolumeAmbient { get; private set; } = 10;
+    public int VolumeObjects { get; private set; } = 10;
 
-    void Start()
+    private const float MinVolume = -80f;
+    private const float MaxVolume = 0f;
+
+    private void SetVolume(string parameterName, float volumeDB)
     {
+        _audioMixer.SetFloat(parameterName, volumeDB);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MuteAmbient() => StartCoroutine(FadeAmbient(MinVolume));
+    public void UnmuteAmbient() => StartCoroutine(FadeAmbient(ConvertToDB(VolumeAmbient)));
+
+    private IEnumerator FadeAmbient(float targetVolume)
     {
-        
+        string parameter = "AmbientVolRaw";
+        float currentVolume;
+        _audioMixer.GetFloat(parameter, out currentVolume);
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float newVolume = Mathf.Lerp(currentVolume, targetVolume, elapsedTime / fadeDuration);
+            SetVolume(parameter, newVolume);
+            yield return null;
+        }
+
+        SetVolume(parameter, targetVolume);
     }
 
-    private void SetMasterVol()
+    private float ConvertToDB(int volume)
     {
-        _audioMixer.SetFloat("MasterVolRaw", VolumeMaster / 10f);
-    }
-    private void SetAmbientVol()
-    {
-        _audioMixer.SetFloat("AmbientVolRaw", VolumeMaster / 10f);
+        // Конвертация из линейной шкалы [0;10] в логарифмическую [-80;0]
+        return volume == 0 ? MinVolume : Mathf.Log10(volume / 10f) * 20f;
     }
 
-    private void SetObjectsVol()
-    {
-        _audioMixer.SetFloat("ObjectsVolRaw", VolumeMaster / 10f);
-    }
+    // Аналогичные методы для других звуковых групп
+    public void MuteMaster() => StartCoroutine(FadeChannel("MasterVolRaw", MinVolume));
+    public void UnmuteMaster() => StartCoroutine(FadeChannel("MasterVolRaw", ConvertToDB(VolumeMaster)));
 
-
-    public void MuteAmbient()
+    private IEnumerator FadeChannel(string parameter, float targetVolume)
     {
-        _audioMixer.SetFloat("AmbientVolRaw", -80f);
-        //for UI volume setting will need a convertore method - from (0;10) to (-80;20) - or what dBls needs
-    }
+        float currentVolume;
+        _audioMixer.GetFloat(parameter, out currentVolume);
 
-    public void UnmuteAmbient()
-    {
-        SetAmbientVol();
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float newVolume = Mathf.Lerp(currentVolume, targetVolume, elapsedTime / fadeDuration);
+            SetVolume(parameter, newVolume);
+            yield return null;
+        }
+
+        SetVolume(parameter, targetVolume);
     }
 }
