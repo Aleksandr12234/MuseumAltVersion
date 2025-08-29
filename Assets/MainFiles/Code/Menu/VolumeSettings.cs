@@ -11,6 +11,13 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _output;
     private int _volume=100;
 
+    public void Start()
+    {
+        _audioMixer.GetFloat(_parametrName, out float сurrentVolume);
+        _volume = (int)Math.Round((сurrentVolume + 80f) / 80f * 100f);
+        UpdateValues();
+    }
+
     public void UpVolume()
     {
         _volume++;
