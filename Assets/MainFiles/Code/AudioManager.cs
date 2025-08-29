@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
 
     public int VolumeObjects { get; private set; }
 
+    private float _memory;
+
     void Start()
     {
     }
@@ -31,7 +33,7 @@ public class AudioManager : MonoBehaviour
     }
     private void SetAmbientVol()
     {
-        _audioMixer.SetFloat("AmbientVolRaw", VolumeMaster / 10f);
+        _audioMixer.SetFloat("AmbientVolRaw", _memory);
     }
 
     private void SetObjectsVol()
@@ -42,6 +44,7 @@ public class AudioManager : MonoBehaviour
 
     public void MuteAmbient()
     {
+        _audioMixer.GetFloat("AmbientVolRaw",out _memory);
         _audioMixer.SetFloat("AmbientVolRaw", -80f);
         //for UI volume setting will need a convertore method - from (0;10) to (-80;20) - or what dBls needs
     }

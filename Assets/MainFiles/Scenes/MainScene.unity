@@ -913,7 +913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2123477432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,10 +1170,6 @@ PrefabInstance:
     - target: {fileID: 2421956789970150575, guid: 86cf176ffb86e7b488fa87c4d5ee9394, type: 3}
       propertyPath: m_Name
       value: TV
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320317859504726016, guid: 86cf176ffb86e7b488fa87c4d5ee9394, type: 3}
-      propertyPath: m_TimeUpdateMode
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5021740362397302887, guid: 86cf176ffb86e7b488fa87c4d5ee9394, type: 3}
       propertyPath: m_LocalPosition.x

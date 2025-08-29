@@ -12,4 +12,10 @@ public class MenuFunctions : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+
+    public void ExitPressed()
+    {
+        Debug.Log("Exit pressed!");
+        Application.Quit();
+    }
 }
