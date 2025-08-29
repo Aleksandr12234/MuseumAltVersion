@@ -15,10 +15,31 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 21491863713146268}
+  - {fileID: 9128748959019181752}
   m_UserColorIndex: 6
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-246776995303358507
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: cf292f8e96e62004d945e50b09548bb8
+  m_EffectName: Normalize
+  m_MixLevel: c1a67a7db52bf294a8fd04dc32bc8b73
+  m_Parameters:
+  - m_ParameterName: Fade in time
+    m_GUID: 8e88e73761e0ed9449f269df02fd5a77
+  - m_ParameterName: Lowest volume
+    m_GUID: f4da95893445a26498812d1df2020bc4
+  - m_ParameterName: Maximum amp
+    m_GUID: 849bbe8acfe860a4d9a3e33fea4d57ae
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -94,7 +115,8 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: bf56ad20185b2b24eaec974847674fc3
   m_FloatValues:
-    96babfa280a1e6d4184c9adb1b5943f8: -2.018037
+    96babfa280a1e6d4184c9adb1b5943f8: 0
+    5279d8091b91d88418f48aefab61f3c2: 0
     75089299b79310c4f9627a466cf1afd2: 0
   m_TransitionOverrides: {}
 --- !u!244 &21491863713146268
@@ -140,7 +162,28 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 1171091618895512627}
+  - {fileID: -246776995303358507}
   m_UserColorIndex: 3
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &9128748959019181752
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1bba3f121b19f7f439443014d9489171
+  m_EffectName: Normalize
+  m_MixLevel: 1850c3a93030d004da8d57a44e7f2acd
+  m_Parameters:
+  - m_ParameterName: Fade in time
+    m_GUID: 83b760c01a2a10746bd2148f79e8e3da
+  - m_ParameterName: Lowest volume
+    m_GUID: e958ecb403755e744909eed44c940970
+  - m_ParameterName: Maximum amp
+    m_GUID: b4b8ababfdffd874281f8f683ee9ac7b
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

@@ -27,8 +27,11 @@ public class PlayMusic : MonoBehaviour, IUsebleObject
     public void ActiveAction()
     {
         isPlaying = true;
-        if (!_audio.isPlaying) _audio.Play();
-        AudioManager.MuteAmbient();
+        if (!_audio.isPlaying)
+        {
+            _audio.Play();
+            AudioManager.MuteAmbient();
+        }
     }
 
     public void Action() { }

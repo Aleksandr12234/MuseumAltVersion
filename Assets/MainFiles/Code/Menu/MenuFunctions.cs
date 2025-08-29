@@ -3,14 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class MenuFunctions : MonoBehaviour
 {
-    public void Setup()
-    {
-        //SceneManager.LoadSceneAsync("MainScene");
-    }
-
     public void PlayButton()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("LoadScreen");
+    }
+
+    public void ExitPressed()
+    {
+        Debug.Log("Exit pressed!");
+        Application.Quit();
     }
     public void VRButton()
     {
