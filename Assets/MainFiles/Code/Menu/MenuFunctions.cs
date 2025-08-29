@@ -12,4 +12,8 @@ public class MenuFunctions : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+    public void VRButton()
+    {
+        SceneManager.LoadScene("VRMainScene");
+    }
 }
