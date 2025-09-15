@@ -14,26 +14,31 @@ public class VolumeSettings : MonoBehaviour
     public void Start()
     {
         _audioMixer.GetFloat(_parametrName, out float сurrentVolume);
-        _volume = (int)Math.Round((сurrentVolume + 80f) / 80f * 100f);
+        _volume = (int)Math.Round(Math.Pow(10, сurrentVolume/20f) * 100);
         UpdateValues();
     }
 
     public void UpVolume()
     {
-        _volume++;
+        _volume ++;
         UpdateValues();
     }
 
     public void DownVolume()
     {
-        _volume--;
+        _volume --;
         UpdateValues();
     }
 
     private void UpdateValues()
     {
         _volume = Math.Clamp(_volume, 0, 100);
-        _audioMixer.SetFloat(_parametrName, Math.Clamp(-80f + _volume / 100f * 80f, -80, 0));
+
+        float dbValue = _volume > 0 ? 
+            20f * Mathf.Log10(_volume / 100f) : 
+            -80f;
+
+        _audioMixer.SetFloat(_parametrName, dbValue);
         if (_output != null) _output.text = "" + _volume;
     }
 }
